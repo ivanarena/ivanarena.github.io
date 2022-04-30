@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Jost', sans-serif;
+  color: white;
+  background-color: black;
+  background: -webkit-gradient(linear, left top, right top, from(black), color-stop(50%, rgba(255, 0, 0, 0.701015)), to(rgba(255, 97, 0, 0.7))), url(https://grainy-gradients.vercel.app/noise.svg);
+  background: linear-gradient(90deg, black 0%, rgba(255, 0, 0, 0.701015) 50%, rgba(255, 97, 0, 0.7) 100%), url(https://grainy-gradients.vercel.app/noise.svg);
+}
+
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header {
+  height: 10vh;
+  padding-top: 8vh;
+  padding-left: 8vw;
+}
+
+header a {
+  margin-left: 2vw;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+}
+
+header #nav_home {
+  margin-left: 0;
+}
+
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 85vh;
+}
+
+.home #intro {
+  font-weight: 400;
+  width: 35vw;
+  margin-bottom: 12vh;
+  margin-left: 8vw;
+}
+
+.home .react-wrapper {
+  display: inline-block;
+}
+
+.arrow {
+  padding-bottom: 3vh;
+  height: 5vh;
+}
+
+.page-header {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 20vh;
+}
+
+.page-header h1 {
+  font-size: x-large;
+}
+
+.work-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 50vh;
+}
+
+.work-wrapper img {
+  width: 30vw;
+  height: 30vh;
+}
+
+.work-wrapper .work-text-wrapper {
+  color: white;
+  width: 40vw;
+}
+
+.work-wrapper .work-text-wrapper h2 {
+  margin-bottom: 2vh;
+}
+
+.about-wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about-wrapper .about-text-wrapper {
+  width: 70vw;
+  margin-bottom: 10vh;
+}
+
+.contact-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 10vh;
+}
+
+.contact-wrapper a {
+  margin-left: 6vw;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+}
+
+.contact-wrapper #contact-mail {
+  margin: 0;
+}

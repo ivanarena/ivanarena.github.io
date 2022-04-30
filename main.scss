@@ -1,0 +1,121 @@
+// TODO: Set variables
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    color: white;
+    background-color: black;
+    background:
+        linear-gradient(90deg, black 0%, rgba(255,0,0,0.7010154403558299) 50%, rgba(255,97,0,0.7) 100%),
+        url(https://grainy-gradients.vercel.app/noise.svg);
+}
+
+.noise {
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    height: 10vh;
+    padding-top: 8vh;
+    padding-left: 8vw;
+    
+    a {
+        margin-left: 2vw;
+        font-weight: 600;
+        color: white;
+        text-decoration: none;
+    }
+    
+    #nav_home {
+        margin-left: 0;
+    }
+}
+
+
+.home {
+    display: flex;
+    align-items: flex-end;
+    height: 85vh;
+    
+    #intro {
+        font-weight: 400;
+        width: 35vw;
+        margin-bottom: 12vh;
+        margin-left: 8vw;
+    }
+    
+    .react-wrapper {
+        display: inline-block;
+    }
+}
+
+.arrow {
+    padding-bottom: 3vh;
+    height: 5vh;
+}
+
+.page-header {
+    flex-direction: column;    
+    height: 20vh;
+    
+    h1 {
+        font-size: x-large;
+    }
+}
+
+.work-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    height: 50vh;
+    
+    img {
+        width: 30vw;
+        height: 30vh;
+    }
+    
+    .work-text-wrapper {
+        color: white;
+        width: 40vw;
+        
+        h2 {
+            margin-bottom: 2vh;
+        }
+    }
+    
+}
+
+.about-wrapper {
+    flex-direction: column;
+    
+    .about-text-wrapper {
+        width: 70vw;
+        margin-bottom: 10vh;
+    }
+}
+
+
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    
+    a {
+        margin-left: 6vw;
+        font-weight: 600;
+        color: white;
+        text-decoration: none;
+    }
+    
+    #contact-mail {
+        margin: 0;
+    }
+}
