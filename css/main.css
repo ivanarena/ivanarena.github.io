@@ -8,8 +8,7 @@ body {
   font-family: 'Jost', sans-serif;
   color: white;
   background-color: black;
-  background: -webkit-gradient(linear, left top, right top, from(black), color-stop(50%, rgba(255, 0, 0, 0.701015)), to(rgba(255, 97, 0, 0.7))), url(https://grainy-gradients.vercel.app/noise.svg);
-  background: linear-gradient(90deg, black 0%, rgba(255, 0, 0, 0.701015) 50%, rgba(255, 97, 0, 0.7) 100%), url(https://grainy-gradients.vercel.app/noise.svg);
+  background: radial-gradient(circle at center, rgba(255, 97, 0, 0.7) 0%, rgba(255, 0, 0, 0.701015) 50%, black 100%);
 }
 
 .flex-center {

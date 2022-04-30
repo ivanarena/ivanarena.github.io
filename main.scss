@@ -1,5 +1,4 @@
 // TODO: Set variables
-
 * {
     margin: 0;
     box-sizing: border-box;
@@ -9,12 +8,7 @@ body {
     font-family: 'Jost', sans-serif;
     color: white;
     background-color: black;
-    background:
-        linear-gradient(90deg, black 0%, rgba(255,0,0,0.7010154403558299) 50%, rgba(255,97,0,0.7) 100%),
-        url(https://grainy-gradients.vercel.app/noise.svg);
-}
-
-.noise {
+    background: radial-gradient(circle at center, rgba(255,97,0,0.7) 0%, rgba(255,0,0,0.7010154403558299) 50%, black 100%);
 }
 
 .flex-center {
