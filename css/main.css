@@ -6,13 +6,11 @@
 
 body {
   font-family: 'Jost', sans-serif;
-  color: black;
-  background-color: black;
-  background: url(https://grainy-gradients.vercel.app/noise.svg);
+  color: white;
+  background-color: #000a12;
 }
 
 main {
-  background: radial-gradient(circle at center, rgba(0, 242, 148, 0.6) 40%, rgba(242, 102, 0, 0.6) 50%, rgba(0, 242, 148, 0.6) 70%, rgba(242, 102, 0, 0.6) 80%, black 100%);
   scroll-behavior: smooth;
 }
 
@@ -37,8 +35,14 @@ header {
 header a {
   margin-left: 2vw;
   font-weight: 600;
-  color: black;
+  color: white;
   text-decoration: none;
+}
+
+header a:hover {
+  color: #bbff00;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
 }
 
 header #nav_home {
@@ -62,14 +66,22 @@ header #nav_home {
   margin-left: 8vw;
 }
 
+.home #my-name {
+  color: #bbff00;
+}
+
 .home #react-word {
   cursor: url(/res/js.svg), auto;
 }
 
-.arrow {
-  font-weight: bold;
+.arrow-wrapper {
   padding-bottom: 3vh;
-  height: 5vh;
+}
+
+.arrow-wrapper .arrow {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
 }
 
 .separator {
@@ -104,7 +116,7 @@ header #nav_home {
 }
 
 .work-wrapper .work-text-wrapper {
-  color: black;
+  color: white;
   width: 40vw;
 }
 
@@ -137,7 +149,7 @@ header #nav_home {
 .contact-wrapper a {
   margin-left: 6vw;
   font-weight: 600;
-  color: black;
+  color: white;
   text-decoration: none;
 }
 

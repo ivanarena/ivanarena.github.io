@@ -1,4 +1,7 @@
 // TODO: Set variables
+$text-color: white;
+$pop-color: #bbff00;
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -6,13 +9,11 @@
 
 body {
     font-family: 'Jost', sans-serif;
-    color: black;
-    background-color: black;
-    background: url(https://grainy-gradients.vercel.app/noise.svg);
+    color: $text-color;
+    background-color: #000a12;
 }
 
 main {
-    background: radial-gradient(circle at center, rgba(0, 242, 148, 0.6) 40%, rgba(242, 102, 0, 0.6) 50%, rgba(0, 242, 148, 0.6) 70%,  rgba(242, 102, 0, 0.6) 80%, rgba(0, 0, 0, 1) 100%);
     scroll-behavior: smooth;
 }
 
@@ -26,14 +27,19 @@ header {
     height: 10vh;
     padding-top: 8vh;
     padding-left: 8vw;
-    
+
     a {
         margin-left: 2vw;
         font-weight: 600;
-        color: black;
+        color: $text-color;
         text-decoration: none;
     }
-    
+
+    a:hover {
+        color: $pop-color;
+        transition-duration: 300ms;
+    }
+
     #nav_home {
         margin-left: 0;
     }
@@ -43,24 +49,31 @@ header {
     display: flex;
     align-items: flex-end;
     height: 85vh;
-    
+
     #intro {
         font-weight: 400;
         width: 35vw;
         margin-bottom: 12vh;
         margin-left: 8vw;
     }
-    
-    
+
+    #my-name {
+        color: $pop-color;
+    }
+
     #react-word {
         cursor: url(/res/js.svg), auto;
     }
 }
 
-.arrow {
-    font-weight: bold;
+.arrow-wrapper {
     padding-bottom: 3vh;
-    height: 5vh;
+
+    .arrow {
+        font-weight: bold;
+        color: $text-color;
+        text-decoration: none;
+    }
 }
 
 .separator {
@@ -68,9 +81,9 @@ header {
 }
 
 .page-header {
-    flex-direction: column;    
+    flex-direction: column;
     height: 20vh;
-    
+
     h1 {
         font-size: x-large;
     }
@@ -80,26 +93,26 @@ header {
     display: flex;
     justify-content: space-evenly;
     height: 50vh;
-    
+
     img {
         width: 30vw;
         height: 30vh;
     }
-    
+
     .work-text-wrapper {
-        color: black;
+        color: $text-color;
         width: 40vw;
-        
+
         h2 {
             margin-bottom: 2vh;
         }
     }
-    
+
 }
 
 .about-wrapper {
     flex-direction: column;
-    
+
     .about-text-wrapper {
         width: 70vw;
         margin-bottom: 10vh;
@@ -111,14 +124,14 @@ header {
     display: flex;
     justify-content: center;
     height: 10vh;
-    
+
     a {
         margin-left: 6vw;
         font-weight: 600;
-        color: black;
+        color: $text-color;
         text-decoration: none;
     }
-    
+
     #contact-mail {
         margin: 0;
     }
