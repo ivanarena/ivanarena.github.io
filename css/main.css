@@ -28,7 +28,7 @@ main {
 
 header {
   height: 10vh;
-  padding-top: 8vh;
+  padding-top: 10vh;
   padding-left: 8vw;
 }
 
@@ -62,7 +62,7 @@ header #nav_home {
 .home #intro {
   font-weight: 400;
   width: 35vw;
-  margin-bottom: 12vh;
+  margin-bottom: 10vh;
   margin-left: 8vw;
 }
 
@@ -71,7 +71,7 @@ header #nav_home {
 }
 
 .home #react-word {
-  cursor: url(/res/js.svg), auto;
+  cursor: url(/res/logos/js.svg), auto;
 }
 
 .arrow-wrapper {
@@ -84,6 +84,12 @@ header #nav_home {
   text-decoration: none;
 }
 
+.arrow-wrapper .arrow:hover {
+  color: #bbff00;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+
 .separator {
   font-weight: bold;
 }
@@ -93,7 +99,7 @@ header #nav_home {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 20vh;
+  height: 23vh;
 }
 
 .page-header h1 {
@@ -104,24 +110,63 @@ header #nav_home {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   height: 50vh;
 }
 
-.work-wrapper img {
-  width: 30vw;
-  height: 30vh;
-}
-
 .work-wrapper .work-text-wrapper {
+  margin-left: 8vw;
   color: white;
-  width: 40vw;
+  width: 80vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.work-wrapper .work-text-wrapper h2 {
+.work-wrapper .work-text-wrapper a {
+  font-size: x-large;
+  margin-right: 2vw;
   margin-bottom: 2vh;
+  color: white;
+}
+
+.work-wrapper .work-text-wrapper a:hover {
+  color: #bbff00;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+
+.work-wrapper .work-text-wrapper p {
+  font-size: x-large;
+  opacity: 0;
+  -webkit-transition: opacity 300ms ease-in;
+  transition: opacity 300ms ease-in;
+  overflow: hidden;
+}
+
+.work-wrapper .work-text-wrapper #work-title-01:hover + #work-desc-01 {
+  cursor: url(/res/logos/c++.svg), auto;
+  opacity: 1;
+}
+
+.work-wrapper .work-text-wrapper #work-title-02:hover + #work-desc-02 {
+  cursor: url(/res/logos/c++.svg), auto;
+  opacity: 1;
+}
+
+.work-wrapper .work-text-wrapper #work-title-03:hover + #work-desc-03 {
+  cursor: url(/res/logos/c++.svg), auto;
+  opacity: 1;
 }
 
 .about-wrapper {
@@ -132,7 +177,7 @@ header #nav_home {
 }
 
 .about-wrapper .about-text-wrapper {
-  width: 70vw;
+  width: 50vw;
   margin-bottom: 10vh;
 }
 
@@ -155,4 +200,15 @@ header #nav_home {
 
 .contact-wrapper #contact-mail {
   margin: 0;
+}
+
+.contact-wrapper img {
+  width: 2vh;
+}
+
+.contact-wrapper img:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  -webkit-transition: 200ms ease-out;
+  transition: 200ms ease-out;
 }
