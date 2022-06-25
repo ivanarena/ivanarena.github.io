@@ -1,0 +1,61 @@
+$primary-color: #ffff00;
+$secondary-color: #000006;
+$text-color: white;
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    color: $text-color;
+    background-color: $secondary-color;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.articles-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 50vh;
+    padding: 0;
+    list-style-position: inside;
+    margin-top: 20vh;
+
+    .article-wrapper {
+        margin-left: 8vw;
+        color: $text-color;
+        width: 80vw;
+        display: flex;
+        flex-direction: row;
+
+        a {
+
+            font-size: x-large;
+            margin-right: 2vw;
+            margin-bottom: 2vh;
+            color: $text-color;
+        }
+
+        a:hover {
+            color: $primary-color;
+            transition-duration: 300ms;
+        }
+
+        p {
+            font-size: x-large;
+            opacity: 0;
+            transition: opacity 300ms ease-in;
+            overflow: hidden;
+        }
+
+        #article-title-01:hover+#article-desc-01 {
+            opacity: 0.4;
+        }
+    }
+}

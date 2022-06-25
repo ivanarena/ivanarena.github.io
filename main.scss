@@ -1,6 +1,7 @@
 // TODO: Set variables
+$primary-color: #ffff00;
+$secondary-color: #000006;
 $text-color: white;
-$pop-color: #bbff00;
 
 * {
     margin: 0;
@@ -10,12 +11,13 @@ $pop-color: #bbff00;
 body {
     font-family: 'Jost', sans-serif;
     color: $text-color;
-    background-color: #000a12;
+    background-color: $secondary-color;
 }
 
-main {
+html {
     scroll-behavior: smooth;
 }
+
 
 .flex-center {
     display: flex;
@@ -29,15 +31,16 @@ header {
     padding-left: 8vw;
 
     a {
-        margin-left: 2vw;
+        margin-left: 3vw;
         font-weight: 600;
         color: $text-color;
         text-decoration: none;
+        transition: 300ms ease-out;
     }
 
     a:hover {
-        color: $pop-color;
-        transition-duration: 300ms;
+        color: $primary-color;
+        transition: 250ms ease-out;
     }
 
     #nav_home {
@@ -58,7 +61,7 @@ header {
     }
 
     #my-name {
-        color: $pop-color;
+        color: $primary-color;
     }
 
     #react-word {
@@ -73,11 +76,12 @@ header {
         font-weight: bold;
         color: $text-color;
         text-decoration: none;
+        transition: 300ms ease-out;
     }
 
     .arrow:hover {
-        color: $pop-color;
-        transition-duration: 300ms;
+        color: $primary-color;
+        transition: 250ms ease-out;
     }
 }
 
@@ -99,6 +103,8 @@ header {
     flex-direction: column;
     justify-content: flex-start;
     height: 50vh;
+    padding: 0;
+    list-style-position: inside;
 
     .work-text-wrapper {
         margin-left: 8vw;
@@ -116,7 +122,7 @@ header {
         }
 
         a:hover {
-            color: $pop-color;
+            color: $primary-color;
             transition-duration: 300ms;
         }
 
@@ -129,17 +135,17 @@ header {
 
         #work-title-01:hover+#work-desc-01 {
             cursor: url(/res/logos/c++.svg), auto; // TODO: fix size or it wont work
-            opacity: 1;
+            opacity: 0.4;
         }
 
         #work-title-02:hover+#work-desc-02 {
             cursor: url(/res/logos/c++.svg), auto; // TODO: fix size or it wont work
-            opacity: 1;
+            opacity: 0.4;
         }
 
         #work-title-03:hover+#work-desc-03 {
             cursor: url(/res/logos/c++.svg), auto; // TODO: fix size or it wont work
-            opacity: 1;
+            opacity: 0.4;
         }
     }
 
@@ -179,4 +185,11 @@ header {
         transform: scale(1.15);
         transition: 200ms ease-out;
     }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
 }
