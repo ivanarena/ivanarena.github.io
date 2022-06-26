@@ -3,6 +3,16 @@ $primary-color: #ffff00;
 $secondary-color: #000006;
 $text-color: white;
 
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -12,12 +22,12 @@ body {
     font-family: 'Jost', sans-serif;
     color: $text-color;
     background-color: $secondary-color;
+    animation: fadein 3s;
 }
 
 html {
     scroll-behavior: smooth;
 }
-
 
 .flex-center {
     display: flex;

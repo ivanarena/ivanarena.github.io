@@ -1,3 +1,21 @@
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 * {
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -8,6 +26,8 @@ body {
   font-family: 'Jost', sans-serif;
   color: white;
   background-color: #000006;
+  -webkit-animation: fadein 3s;
+          animation: fadein 3s;
 }
 
 html {

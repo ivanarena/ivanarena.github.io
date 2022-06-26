@@ -2,6 +2,16 @@ $primary-color: #ffff00;
 $secondary-color: #000006;
 $text-color: white;
 
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -11,12 +21,49 @@ body {
     font-family: 'Jost', sans-serif;
     color: $text-color;
     background-color: $secondary-color;
+    animation: fadein 3s;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home {
+    display: flex;
+    align-items: flex-end;
+    height: 20vh;
+
+    #intro {
+        font-weight: 400;
+        width: 20vw;
+        margin-top: 20vh;
+        margin-left: 8vw;
+    }
+
+    .highlighted {
+        color: $primary-color;
+    }
+
+    a {
+        margin-top: 20vh;
+        font-size: xx-large;
+        color: $text-color;
+        opacity: 0.4;
+        text-decoration: none;
+        transition: 300ms ease-out;
+    }
+
+    a:hover {
+        opacity: 1;
+        transition: 250ms ease-out;
+    }
+}
 
 .articles-list {
     display: flex;
@@ -25,7 +72,7 @@ html {
     height: 50vh;
     padding: 0;
     list-style-position: inside;
-    margin-top: 20vh;
+    margin-top: 10vh;
 
     .article-wrapper {
         margin-left: 8vw;
@@ -35,22 +82,27 @@ html {
         flex-direction: row;
 
         a {
-
             font-size: x-large;
             margin-right: 2vw;
             margin-bottom: 2vh;
             color: $text-color;
+            transition: 300ms ease-out;
         }
 
         a:hover {
             color: $primary-color;
-            transition-duration: 300ms;
+            transition: 250ms ease-out;
+        }
+
+        a:hover {
+            color: $primary-color;
+            transition: 250ms ease-out;
         }
 
         p {
             font-size: x-large;
             opacity: 0;
-            transition: opacity 300ms ease-in;
+            transition: opacity 300ms ease-out;
             overflow: hidden;
         }
 
@@ -58,4 +110,15 @@ html {
             opacity: 0.4;
         }
     }
+}
+
+.separator {
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
 }
