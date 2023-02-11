@@ -7,13 +7,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: bold;
     scroll-behavior: smooth;
 }
 
 
-h1 {
+h1,
+ul {
     text-transform: uppercase;
     text-align: center;
 }
@@ -92,7 +93,7 @@ section {
 }
 
 footer {
-    margin-bottom: 2vh;
+    margin-bottom: 4vh;
 }
 
 .top-link-box {
@@ -102,16 +103,20 @@ footer {
     justify-content: center;
     position: fixed;
     bottom: 5%;
-    right: 5%;
+    right: 3%;
     width: 80px;
     height: 80px;
     border-radius: 100%;
+    -webkit-box-shadow: 10px 10px 50px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 50px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 50px -5px rgba(0, 0, 0, 0.75);
 }
 
 .top-link {
     color: white;
-    font-size: 3em;
+    font-size: 2.5em;
     text-decoration: none;
+    font-weight: lighter;
 }
 
 /* UTILITIES */
