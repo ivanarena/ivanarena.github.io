@@ -1,253 +1,124 @@
-@-webkit-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+:root {
+    --accent: #0500FF;
+    --secondary: #888888;
 }
 
 * {
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: bold;
+    scroll-behavior: smooth;
 }
 
-body {
-  font-family: 'Jost', sans-serif;
-  color: white;
-  background-color: #000006;
-  -webkit-animation: fadein 3s;
-          animation: fadein 3s;
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
 }
 
-html {
-  scroll-behavior: smooth;
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.flex-center {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+/* FLEX */
+section,
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-header {
-  height: 10vh;
-  padding-top: 10vh;
-  padding-left: 8vw;
+/* SECTIONS */
+section {
+    width: 80vw;
+    height: 100vh;
 }
 
-header a {
-  margin-left: 3vw;
-  font-weight: 600;
-  color: white;
-  text-decoration: none;
-  -webkit-transition: 300ms ease-out;
-  transition: 300ms ease-out;
+.main-heading {
+    width: 50vw;
+    font-size: 3em;
+    line-height: 0.9em;
 }
 
-header a:hover {
-  color: #ffff00;
-  -webkit-transition: 250ms ease-out;
-  transition: 250ms ease-out;
+.work-sec {
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
-header #nav_home {
-  margin-left: 0;
+.work-heading {
+    font-size: 3em;
+    align-self: center;
+    margin-top: 20vh;
 }
 
-.home {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  height: 85vh;
+.work-list,
+.contact-list {
+    list-style-type: none;
 }
 
-.home #intro {
-  font-weight: 400;
-  width: 35vw;
-  margin-bottom: 10vh;
-  margin-left: 8vw;
+.work-list {
+    margin-top: 10vh;
 }
 
-.home #my-name {
-  color: #ffff00;
+.work-elem,
+.contact-elem {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
 }
 
-.home #react-word {
-  cursor: url(/res/logos/js.svg), auto;
+.work-link {
+    color: var(--secondary);
+    font-size: 2em;
+    text-decoration: underline;
 }
 
-.arrow-wrapper {
-  padding-bottom: 3vh;
+.work-link:hover,
+.contact-link:hover {
+    color: var(--accent);
 }
 
-.arrow-wrapper .arrow {
-  font-weight: bold;
-  color: white;
-  text-decoration: none;
-  -webkit-transition: 300ms ease-out;
-  transition: 300ms ease-out;
+.contact-elem {
+    font-size: 2em;
+    text-transform: uppercase;
 }
 
-.arrow-wrapper .arrow:hover {
-  color: #ffff00;
-  -webkit-transition: 250ms ease-out;
-  transition: 250ms ease-out;
-}
-
-.separator {
-  font-weight: bold;
-}
-
-.page-header {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 23vh;
-}
-
-.page-header h1 {
-  font-size: x-large;
-}
-
-.work-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  height: 50vh;
-  padding: 0;
-  list-style-position: inside;
-}
-
-.work-wrapper .work-text-wrapper {
-  margin-left: 8vw;
-  color: white;
-  width: 80vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.work-wrapper .work-text-wrapper a {
-  font-size: x-large;
-  margin-right: 2vw;
-  margin-bottom: 2vh;
-  color: white;
-}
-
-.work-wrapper .work-text-wrapper a:hover {
-  color: #ffff00;
-  -webkit-transition-duration: 300ms;
-          transition-duration: 300ms;
-}
-
-.work-wrapper .work-text-wrapper p {
-  font-size: x-large;
-  opacity: 0;
-  -webkit-transition: opacity 300ms ease-in;
-  transition: opacity 300ms ease-in;
-  overflow: hidden;
-}
-
-.work-wrapper .work-text-wrapper #work-title-01:hover + #work-desc-01 {
-  cursor: url(/res/logos/c++.svg), auto;
-  opacity: 0.4;
-}
-
-.work-wrapper .work-text-wrapper #work-title-02:hover + #work-desc-02 {
-  cursor: url(/res/logos/c++.svg), auto;
-  opacity: 0.4;
-}
-
-.work-wrapper .work-text-wrapper #work-title-03:hover + #work-desc-03 {
-  cursor: url(/res/logos/c++.svg), auto;
-  opacity: 0.4;
-}
-
-.about-wrapper {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.about-wrapper .about-text-wrapper {
-  width: 50vw;
-  margin-bottom: 10vh;
-}
-
-.contact-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 10vh;
-}
-
-.contact-wrapper a {
-  margin-left: 6vw;
-  font-weight: 600;
-  color: white;
-  text-decoration: none;
-}
-
-.contact-wrapper #contact-mail {
-  margin: 0;
-}
-
-.contact-wrapper img {
-  width: 2vh;
-}
-
-.contact-wrapper img:hover {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
-  -webkit-transition: 200ms ease-out;
-  transition: 200ms ease-out;
+.contact-link {
+    color: var(--secondary);
+    text-decoration: underline;
 }
 
 footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 20vh;
+    margin-bottom: 2vh;
+}
+
+.top-link-box {
+    background-color: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+
+.top-link {
+    color: white;
+    font-size: 3em;
+    text-decoration: none;
+}
+
+/* UTILITIES */
+.italic {
+    font-style: italic;
+}
+
+.accent {
+    color: var(--accent);
 }

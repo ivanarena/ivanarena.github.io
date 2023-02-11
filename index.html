@@ -6,93 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Passionate and talented full-stack developer.">
     <title>Ivan Arena — Portfolio</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="/res/favicon.png">
     <script src="main.js"></script>
     <noscript>Your browser does not support JavaScript!</noscript>
 </head>
 
 <body>
-    <main>
-        <header>
-            <nav>
-                <a id="nav_home" href="#home-mark">home</a>
-                <a href="#work-mark">work</a>
-                <a href="#about-mark">about</a>
-                <a href="#contact-mark">contact</a>
-                <a href="blog.html">blog</a>
-            </nav>
-        </header>
-        <div id="home-mark" class="home">
-            <h1 id="intro">I’m <span id="my-name">Ivan Arena</span>,<br>I craft sensational web applications using <span
-                    id="react-word">React</span>.
-            </h1>
-        </div>
-        <div class="arrow-wrapper flex-center">
-            <a class="arrow" href="#work-mark">v</a>
-        </div>
-        <div id="work-mark" class="page-header flex-center">
-            <h1>work</h1>
-        </div>
-        <ul class="work-wrapper">
-            <li class="work-text-wrapper">
-                <a href="https://www.github.com/ivanarena/unipd-progetto-pao" id="work-title-01">01 — QtChartifier</a>
-                <p id="work-desc-01">A chart-oriented Microsoft Excel clone.</p>
-            </li>
-            <li class="work-text-wrapper">
-                <a href="https://www.github.com/ivanarena/unipd-basi-di-dati" id="work-title-02">02 — SoundExp
-                    Database</a>
-                <p id="work-desc-02">Database for an audio streaming platform.</p>
-            </li>
-            <li class="work-text-wrapper">
-                <a href="https://ivanarena.github.io/decimal-to-roman-converter/" id="work-title-03">03 —
-                    Decimal-to-Roman Converter</a>
-                <p id="work-desc-03">Real-time number converter from decimals to Romans.</p>
-            </li>
-        </ul>
-        <div id="about-mark" class="separator flex-center">
-            <p>—</p>
-        </div>
-        <div class="page-header flex-center">
-            <h1>about</h1>
-        </div>
-        <div class="about-wrapper flex-center">
-            <div class="about-text-wrapper">
-                <p>Hey, here’s more about me: I’m 20, I’m from Sicily, a wonderful island in the south of Italy,
-                    although I’m currently based in Padua, IT, while pursuing a Bachelor in Computer Science @UniPD.</p>
-                <br>
-                <p>I like to build appealing front-ends and functional back-ends using ReactJS.</p>
-                <br>
-                <p>Aside from developing, I am also interested in many (if not all) forms of art, such as music and
-                    cinema. I work on Instagram as a content creator and fashion influencer. </p>
-                <br>
-                <p>Feel free to reach out in the next section if you have any question or request, or head to my blog if
-                    you want to read more. :)</p>
-            </div>
-        </div>
-        <div id="contact-mark" class="separator flex-center">
-            <p>—</p>
-        </div>
-        <div class="page-header flex-center">
-            <h1>contact</h1>
-        </div>
-        <div class="contact-wrapper">
-            <a id="contact-mail" href="mailto:ivan.x28x@gmail.com"><img src="/res/logos/gmail.png" alt="gmail logo"></a>
-            <a href="https://www.linkedin.com/in/ivan-arena/"><img src="/res/logos/linkedin.png"
-                    alt="linkedin logo"></a>
-            <a href="https://github.com/ivanarena/"><img src="/res/logos/github_light.png" alt="github logo"></a>
-            <a href="https://instagram.com/ivanknowswhat/"><img src="/res/logos/instagram.png" alt="instagram logo"></a>
-        </div>
-        <div class="separator flex-center">
-            <p>—</p>
-        </div>
-        <footer>
-            <p>Made by me — 2022</p>
-        </footer>
+    <main id="top">
+        <section class="main-sec">
+            <h1 class="main-heading"><span class="accent italic">Ivan Arena</span> is a skilled and curious <span
+                    class="italic">software engineer</span> currently based in <span class="italic">Padua, IT</span>
+                pursuing a bachelor's in Computer Science</h1>
+        </section>
+        <section class="work-sec">
+            <h1 class="work-heading">Selected works</h1>
+            <ul class="work-list">
+                <li class="work-elem"><a href="" class="work-link">Excel clone</a></li>
+                <li class="work-elem"><a href="" class="work-link">Excel clone</a></li>
+                <li class="work-elem"><a href="" class="work-link">Excel clone</a></li>
+                <li class="work-elem"><a href="" class="work-link">Excel clone</a></li>
+            </ul>
+        </section>
+        <section class="contact-sec">
+            <ul class="contact-list">
+                <li class="contact-elem">E-mail: <a href="mailto:ivan.x28x@gmail.com"
+                        class="contact-link">ivan.x28x@gmail.com</a></li>
+                <li class="contact-elem">Instagram: <a href="https://www.instagram.com/ivanknowswhat/"
+                        class="contact-link">@ivanknowswhat</a></li>
+                <li class="contact-elem">LinkedIn: <a href="https://www.linkedin.com/in/ivan-arena/"
+                        class="contact-link">Ivan Arena</a></li>
+            </ul>
+        </section>
     </main>
+    <div class="top-link-box">
+        <a href="#top" class="top-link">&uarr;</a>
+    </div>
+    <footer>
+        <p>Made by me — 2023</p>
+    </footer>
 </body>
 
 </html>
