@@ -16,7 +16,7 @@ if (localStorage.prefersDark === "true") {
 function darkModeOn() {
     darkToggle.classList.add('not-displayed');
     lightToggle.classList.remove('not-displayed');
-    console.log('darkModeOn');
+    localStorage.prefersDark = true;
     body.classList.add('dark');
 
 }
@@ -24,7 +24,7 @@ function darkModeOn() {
 function darkModeOff() {
     lightToggle.classList.add('not-displayed');
     darkToggle.classList.remove('not-displayed');
-    console.log('darkModeOff');
+    localStorage.prefersDark = false;
     body.classList.remove('dark');
 }
 
@@ -43,15 +43,14 @@ const observer = new IntersectionObserver(entries => {
             toTop.classList.remove('animation');
             timeout = setTimeout(function () {
                 toTop.classList.add('not-displayed');
-            }, 2000);
+            }, 1500);
             return;
         }
         timeout && clearTimeout(timeout);
-        console.log('show')
         toTop.classList.remove('not-displayed');
         toTop.classList.add('animation');
     });
 });
 
-observer.observe(document.getElementsByClassName('main-sec')[0]);
+observer.observe(document.getElementsByClassName('main-heading')[0]);
 // ===============================================================
