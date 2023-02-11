@@ -34,7 +34,7 @@ lightToggle.addEventListener('click', darkModeOff);
 
 
 // TOTOP BUTTON HANDLER
-const toTop = document.getElementById('top-link-box');
+const toTop = document.getElementById('top-link');
 let timeout = null;
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
