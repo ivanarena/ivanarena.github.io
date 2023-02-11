@@ -126,6 +126,12 @@ section {
     line-height: 0.9em;
 }
 
+@media screen and (max-width: 586px) {
+    .main-heading {
+        font-size: 2.7em;
+    }
+}
+
 .work-sec {
     flex-direction: column;
     justify-content: flex-start;
@@ -169,6 +175,7 @@ section {
 
 .contact-elem {
     font-size: 2em;
+    text-align: center;
 }
 
 .contact-link {
