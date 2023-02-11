@@ -63,6 +63,10 @@
     font-family: 'Inter', sans-serif;
     font-weight: bold;
     scroll-behavior: smooth;
+
+}
+
+body {
     -webkit-animation: fadein 2s;
     animation: fadein 2s;
 }
@@ -98,12 +102,10 @@ header {
     height: 30px;
 }
 
-#light-toggle {
-    cursor: pointer;
-}
-
+#light-toggle,
 #dark-toggle {
     cursor: pointer;
+    animation: none;
 }
 
 /* FLEX */

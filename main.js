@@ -20,7 +20,6 @@ function darkModeOn() {
     body.classList.add('dark');
 
 }
-// ===============================================================
 
 function darkModeOff() {
     lightToggle.classList.add('not-displayed');
@@ -31,17 +30,23 @@ function darkModeOff() {
 
 darkToggle.addEventListener('click', darkModeOn);
 lightToggle.addEventListener('click', darkModeOff);
+// ===============================================================
 
 
 // TOTOP BUTTON HANDLER
 const toTop = document.getElementById('top-link-box');
+let timeout = null;
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
 
         if (entry.isIntersecting) {
             toTop.classList.remove('animation');
+            timeout = setTimeout(function () {
+                toTop.classList.add('not-displayed');
+            }, 2000);
             return;
         }
+        timeout && clearTimeout(timeout);
         console.log('show')
         toTop.classList.remove('not-displayed');
         toTop.classList.add('animation');
