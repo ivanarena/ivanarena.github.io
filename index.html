@@ -10,13 +10,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="/res/favicon.png">
-    <script src="main.js"></script>
+    <link rel="shortcut icon" href="/res/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/res/favicon.ico" type="image/x-icon">
     <noscript>Your browser does not support JavaScript!</noscript>
 </head>
 
 <body>
     <main id="top">
+        <header>
+            <img class="logo" src="/res/logo.png" alt="ivan arena logo">
+            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                stroke-linejoin="round" id="light-toggle" class="not-displayed" height="1em" width="1em"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                stroke-linejoin="round" id="dark-toggle" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+        </header>
         <section class="main-sec">
             <h1 class="main-heading"><span class="accent italic">Ivan Arena</span> is a skilled and curious <span
                     class="italic">software engineer</span> currently based in <span class="italic">Padua, IT</span>
@@ -25,10 +45,14 @@
         <section class="work-sec">
             <h1 class="work-heading">Selected works</h1>
             <ul class="work-list">
-                <li class="work-elem"><a href="" class="work-link">Excel clone</a></li>
-                <li class="work-elem"><a href="" class="work-link">Excel clone</a></li>
-                <li class="work-elem"><a href="" class="work-link">Excel clone</a></li>
-                <li class="work-elem"><a href="" class="work-link">Excel clone</a></li>
+                <li class="work-elem"><a href="https://github.com/ivanarena/unipd-progetto-pao"
+                        class="work-link">Chartifier</a></li>
+                <li class="work-elem"><a href="https://github.com/ivanarena/unipd-tecnologie-web" class="work-link">San
+                        Junipero Metaverse</a></li>
+                <li class="work-elem"><a href="https://github.com/ivanarena/unipd-basi-di-dati"
+                        class="work-link">SoundExp's database</a></li>
+                <li class="work-elem"><a href="https://ivanarena.github.io/decimal-to-roman-converter/"
+                        class="work-link">Decimal-to-Roman in real-time</a></li>
             </ul>
         </section>
         <section class="contact-sec">
@@ -49,5 +73,6 @@
         <p>Made by me — 2023</p>
     </footer>
 </body>
+<script src="main.js"></script>
 
 </html>
