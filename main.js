@@ -27,9 +27,6 @@ function darkModeOff() {
     localStorage.prefersDark = false;
     body.classList.remove('dark');
 }
-
-darkToggle.addEventListener('click', darkModeOn);
-lightToggle.addEventListener('click', darkModeOff);
 // ===============================================================
 
 

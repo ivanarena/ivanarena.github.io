@@ -18,45 +18,33 @@
 <body>
     <main id="top">
         <header>
-            <img class="logo" src="/res/logo.png" alt="ivan arena logo">
-            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
-                stroke-linejoin="round" id="light-toggle" class="not-displayed" height="1em" width="1em"
-                xmlns="http://www.w3.org/2000/svg">
-                <circle cx="12" cy="12" r="5"></circle>
-                <line x1="12" y1="1" x2="12" y2="3"></line>
-                <line x1="12" y1="21" x2="12" y2="23"></line>
-                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                <line x1="1" y1="12" x2="3" y2="12"></line>
-                <line x1="21" y1="12" x2="23" y2="12"></line>
-                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-            </svg>
-            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
-                stroke-linejoin="round" id="dark-toggle" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-            </svg>
+            <a href="/">Ivan Arena</a>
+            <nav>
+                <ul>
+                    <li><a href="#work-sec">Works</a></li>
+                    <li><a href="#about-sec">About</a></li>
+                    <li><a href="#contact-sec">Contact</a></li>
+                </ul>
+            </nav>
         </header>
         <section class="main-sec">
-            <h1 class="main-heading"><span class="accent italic">Ivan Arena</span> is a skilled and curious <span
-                    class="italic">software engineer</span> currently based in <span class="italic">Padua, IT</span>
-                pursuing a bachelor's in Computer Science</h1>
+            <h1 class="main-heading">Hi, I'm <span class="underlined">Ivan Arena</span>, a skilled and curious <span
+                    class="underlined">software engineer</span> currently pursuing a BSc in Computer Science at the
+                University of Padua, in Italy.</h1>
         </section>
-        <section class="work-sec">
-            <h1 class="work-heading">Selected works</h1>
-            <ul class="work-list">
-                <li class="work-elem"><a target="_blank" href="https://github.com/ivanarena/unipd-progetto-pao"
-                        class="work-link">Chartifier</a></li>
-                <li class="work-elem"><a target="_blank" href="https://github.com/ivanarena/unipd-tecnologie-web"
-                        class="work-link">San
-                        Junipero Metaverse</a></li>
-                <li class="work-elem"><a target="_blank" href="https://github.com/ivanarena/unipd-basi-di-dati"
-                        class="work-link">SoundExp's database</a></li>
-                <li class="work-elem"><a target="_blank" href="https://ivanarena.github.io/decimal-to-roman-converter/"
-                        class="work-link">Decimal-to-Roman in real-time</a></li>
-            </ul>
+        <section id="work-sec">
+            <h1 class="secondary-heading">My career so far</h1>
+            <p>In Summer 2023 I interned at Qualcomm Technologies in Cork, Ireland. There I worked mainly in Machine
+                Learning and Software Engineering.</p>
+            <p>I also curate some personal projects in my free time, you can find them all on my GitHub but I'll list a
+                few here:</p>
         </section>
-        <section class="contact-sec">
+        <section id="about-sec">
+            <h1 class="secondary-heading">Something more about me</h1>
+            <p>I was born in a small village in northern Sicily, a wonderful island at the bottom of Italy.</p>
+        </section>
+        <section id="contact-sec">
+            <h1 class="secondary-heading">Get in touch</h1>
             <ul class="contact-list">
                 <li class="contact-elem">E-mail: <a target="_blank" href="mailto:ivan.x28x@gmail.com"
                         class="contact-link">ivan.x28x@gmail.com</a></li>
@@ -64,12 +52,14 @@
                         class="contact-link">@ivanknowswhat</a></li>
                 <li class="contact-elem">LinkedIn: <a target="_blank" href="https://www.linkedin.com/in/ivan-arena/"
                         class="contact-link">Ivan Arena</a></li>
+                <li class="contact-elem">GitHub: <a target="_blank" href="https://github.com/ivanarena"
+                        class="contact-link">@ivanarena</a></li>
             </ul>
         </section>
     </main>
     <a id="top-link" class="not-displayed" href="#top">&uarr;</a>
     <footer>
-        <p>Made by me — 2023</p>
+        <span>Made by me — 2023</span>
     </footer>
 </body>
 <script src="main.js"></script>
