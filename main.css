@@ -1,8 +1,10 @@
 :root {
-    --accent: #003fb3;
+    --accent: #bb000b;
     --hover: #ffd900;
     --indent: 10vw;
     --fs-d-p: 40px;
+    --fs-d-works: 25px;
+    --fs-d-secondary-h: 30px;
 }
 
 @-webkit-keyframes fadein {
@@ -82,6 +84,7 @@ body {
     -webkit-animation: fadein 2s;
     animation: fadein 2s;
     background-color: var(--accent);
+    background: radial-gradient(circle, rgba(187, 0, 11, 1) 0%, rgba(187, 0, 11, 1) 55%, rgba(163, 16, 69, 1) 100%);
     color: white;
 }
 
@@ -129,18 +132,20 @@ footer {
 
 footer {
     justify-content: center;
+    margin-top: 16vh;
 }
 
 /* SECTIONS */
 section {
     padding-left: var(--indent);
     width: 100%;
-    height: 90vh;
+    height: auto;
+    margin-top: 20vh;
     flex-direction: column;
 }
 
 .main-sec {
-    margin-top: 50vh;
+    margin-top: 45vh;
 }
 
 .main-heading {
@@ -162,6 +167,7 @@ section {
 .secondary-heading {
     margin-top: 10vh;
     margin-bottom: 8vh;
+    font-size: var(--fs-d-secondary-h);
 }
 
 p {
@@ -169,6 +175,8 @@ p {
     padding-right: var(--indent);
     font-size: var(--fs-d-p);
 }
+
+
 
 .contact-list {
     list-style-type: none;
@@ -182,6 +190,7 @@ p {
     margin-bottom: .5vh;
 }
 
+a,
 .contact-link:hover {
     color: var(--hover);
     transition: color .2s ease-in-out;
@@ -191,6 +200,7 @@ p {
     font-size: var(--fs-d-p);
 }
 
+a,
 .contact-link {
     transition: color .2s ease-in-out;
     color: white;
@@ -201,7 +211,46 @@ footer {
     margin-bottom: 4vh;
 }
 
+/* WORKS */
+.works {
+    margin-top: 16vh;
+    list-style-type: none;
+}
 
+.works li {
+    margin-bottom: 8vh;
+}
+
+.work-link {
+
+    font-size: var(--fs-d-works);
+}
+
+.work-desc {
+    width: 50%;
+    margin-top: 1vh;
+    font-size: var(--fs-d-works);
+}
+
+.work-stack {
+    font-size: small;
+    color: var(--hover);
+}
+
+
+@media screen and (max-width: 900px) {
+    .carousel img {
+        width: calc(100% / 2);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .carousel img {
+        width: 100%;
+    }
+}
+
+/* TOP LINK ARROW */
 #top-link {
     background-color: white;
     display: flex;

@@ -1,35 +1,3 @@
-// DARK MODE HANDLER
-const darkToggle = document.getElementById('dark-toggle');
-const lightToggle = document.getElementById('light-toggle');
-const body = document.getElementsByTagName('body')[0];
-
-if (localStorage.prefersDark === undefined) {
-    localStorage.setItem('prefersDark',
-        window.matchMedia("(prefers-color-scheme: dark)").matches);
-}
-
-if (localStorage.prefersDark === "true") {
-    darkModeOn();
-}
-
-
-function darkModeOn() {
-    darkToggle.classList.add('not-displayed');
-    lightToggle.classList.remove('not-displayed');
-    localStorage.prefersDark = true;
-    body.classList.add('dark');
-
-}
-
-function darkModeOff() {
-    lightToggle.classList.add('not-displayed');
-    darkToggle.classList.remove('not-displayed');
-    localStorage.prefersDark = false;
-    body.classList.remove('dark');
-}
-// ===============================================================
-
-
 // TOTOP BUTTON HANDLER
 const toTop = document.getElementById('top-link');
 let timeout = null;
