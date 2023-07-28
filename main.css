@@ -1,6 +1,6 @@
 :root {
-    --accent: #bb000b;
-    --hover: #ffd900;
+    --accent: #0026ff;
+    --hover: #0026ff;
     --indent: 10vw;
     --fs-d-p: 24px;
     --fs-m-h1: 36px;
@@ -135,6 +135,7 @@ nav img {
     width: 20px;
 }
 
+
 /* FLEX */
 section,
 footer {
@@ -204,6 +205,7 @@ p {
     justify-content: center;
     margin-left: var(--indent);
     margin-right: var(--indent);
+    margin-bottom: 6vh;
 }
 
 .timespan {
@@ -259,9 +261,7 @@ section#technologies {
     height: auto;
 }
 
-.tools-row .tool {
-    margin: 6px 6px 6px 6px;
-}
+
 
 /* =============== */
 
@@ -275,19 +275,39 @@ section#technologies {
 
 .project-card {
     min-height: 100%;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://picsum.photos/id/1043/800/600);
     background-size: cover;
-    padding: 8vh 8vw 8vh 8vw;
+    padding: 14vh 8vw 8vh 8vw;
     border-radius: 30px;
     color: white;
     height: auto;
     width: 80vw;
     max-width: 1100px;
     min-height: 60vh;
+    margin-bottom: 6vh;
+    transition: transform .6s;
+}
+
+.project-card:hover {
+    cursor: pointer;
+    transform: scale(102%, 102%);
+    transition: transform .4s;
+}
+
+.project-card#uncaptchable {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)), url(res/uncaptchable.gif);
+}
+
+.project-card#qtchartifier {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)), url(res/qtchartifier.gif);
 }
 
 .project-name {
     margin-bottom: 2vh;
+}
+
+.project-tools {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .tool {
@@ -297,6 +317,7 @@ section#technologies {
     border-radius: var(--bradius);
     margin-left: 2px;
     margin-right: 2px;
+    margin: 6px 6px 6px 6px;
 }
 
 .project-desc {
