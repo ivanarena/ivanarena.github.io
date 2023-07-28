@@ -2,9 +2,14 @@
     --accent: #bb000b;
     --hover: #ffd900;
     --indent: 10vw;
-    --fs-d-p: 40px;
-    --fs-d-works: 25px;
-    --fs-d-secondary-h: 30px;
+    --fs-d-p: 24px;
+    --fs-m-h1: 36px;
+    --fs-d-works: 24px;
+    --fs-d-section-h: 40px;
+    --bradius: 15px;
+    --bgcolor: rgb(172, 218, 224);
+    --text-color: black;
+    --text-color-secondary: rgb(107, 107, 107);
 }
 
 @-webkit-keyframes fadein {
@@ -61,12 +66,12 @@
 
 @font-face {
     font-family: helvetica-neue-bold;
-    src: url("./res/HelveticaNeue-Bold.otf");
+    src: url("./res/fonts/HelveticaNeue-Bold.otf");
 }
 
 @font-face {
     font-family: helvetica-neue-medium;
-    src: url("./res/HelveticaNeue-Medium.otf");
+    src: url("./res/fonts/HelveticaNeue-Medium.otf");
 }
 
 
@@ -83,28 +88,25 @@
 body {
     -webkit-animation: fadein 2s;
     animation: fadein 2s;
-    background-color: var(--accent);
-    background: radial-gradient(circle, rgba(187, 0, 11, 1) 0%, rgba(187, 0, 11, 1) 55%, rgba(163, 16, 69, 1) 100%);
-    color: white;
 }
 
 main {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 8vh;
+    margin-top: 7vh;
     width: 100%;
     padding-left: var(--indent);
     padding-right: var(--indent);
 }
 
 header a {
-    color: white;
     text-decoration: none;
     transition: color .2s ease-in-out;
 }
@@ -120,8 +122,17 @@ nav ul {
 }
 
 nav ul li {
-    margin-left: 4vw;
-    /* margin-right: 1.5vw; */
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+}
+
+nav a {
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+nav img {
+    width: 20px;
 }
 
 /* FLEX */
@@ -137,117 +148,213 @@ footer {
 
 /* SECTIONS */
 section {
-    padding-left: var(--indent);
     width: 100%;
     height: auto;
-    margin-top: 20vh;
     flex-direction: column;
 }
 
-.main-sec {
-    margin-top: 45vh;
+#main {
+    margin-top: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 80vw;
 }
 
-.main-heading {
-    width: 65vw;
+h1.main-heading {
+    width: 80vw;
+    max-width: 800px;
     font-size: 3em;
     line-height: 1.1em;
 }
 
+#main a {
+    margin-top: 14vh;
+    margin-bottom: 18vh;
+    color: var(--text-color-secondary);
+}
+
 @media screen and (max-width: 586px) {
-    .main-heading {
+    header nav.sections {
+        display: none;
+    }
+
+    h1.main-heading {
         width: 75vw;
+        font-size: var(--fs-m-h1);
     }
 }
 
-#work-sec {
-    justify-content: flex-start;
-}
-
-.secondary-heading {
+.section-heading {
     margin-top: 10vh;
     margin-bottom: 8vh;
-    font-size: var(--fs-d-secondary-h);
+    font-size: var(--fs-d-section-h);
+    text-align: center;
 }
 
 p {
     margin-top: 4vh;
-    padding-right: var(--indent);
     font-size: var(--fs-d-p);
 }
 
+/* CAREER */
+.job {
+    display: flex;
+    justify-content: center;
+    margin-left: var(--indent);
+    margin-right: var(--indent);
+}
+
+.timespan {
+    text-align: center;
+}
+
+.timespan .separator {
+    background-color: black;
+    width: 2px;
+    height: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.job-metadata {
+    padding-left: 40px;
+}
+
+.job-metadata img {
+    width: 140px;
+}
+
+p.job-description {
+    color: var(--text-color-secondary);
+    max-width: 800px;
+    width: auto;
+}
+
+/* =============== */
 
 
-.contact-list {
-    list-style-type: none;
+/* TECHNOLOGIES */
+section#technologies {
+    padding-left: var(--indent);
+    padding-right: var(--indent);
+}
+
+.tools-row-wrap {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin-top: 4vh;
+    align-items: center;
+    justify-content: center;
 }
 
-.contact-elem {
-    margin-bottom: .5vh;
+.tools-row {
+    /* padding: 1vh 0 1vh 0; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
 }
 
-a,
-.contact-link:hover {
+.tools-row .tool {
+    margin: 6px 6px 6px 6px;
+}
+
+/* =============== */
+
+
+/* PROJECTS */
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-card {
+    min-height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://picsum.photos/id/1043/800/600);
+    background-size: cover;
+    padding: 8vh 8vw 8vh 8vw;
+    border-radius: 30px;
+    color: white;
+    height: auto;
+    width: 80vw;
+    max-width: 1100px;
+    min-height: 60vh;
+}
+
+.project-name {
+    margin-bottom: 2vh;
+}
+
+.tool {
+    background-color: var(--bgcolor);
+    color: var(--text-color);
+    padding: 6px 12px 6px 12px;
+    border-radius: var(--bradius);
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.project-desc {
+    margin-top: 18vh;
+}
+
+/* =============== */
+
+
+
+
+/* ABOUT, CONTACT */
+section#about,
+section#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#about p,
+section#contact p {
+    text-align: justify;
+    margin-left: var(--indent);
+    margin-right: var(--indent);
+    color: var(--text-color-secondary);
+    width: 80vw;
+    max-width: 1000px;
+}
+
+section#contact nav.links {
+    margin-top: 8vh;
+}
+
+section#contact nav.links a {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+section#contact nav.links a img {
+    width: 30px;
+}
+
+/* =============== */
+
+a:hover {
     color: var(--hover);
     transition: color .2s ease-in-out;
 }
 
-.contact-elem {
-    font-size: var(--fs-d-p);
-}
 
-a,
-.contact-link {
+a {
     transition: color .2s ease-in-out;
-    color: white;
     text-decoration: underline;
+    color: var(--text-color);
 }
 
 footer {
     margin-bottom: 4vh;
-}
-
-/* WORKS */
-.works {
-    margin-top: 16vh;
-    list-style-type: none;
-}
-
-.works li {
-    margin-bottom: 8vh;
-}
-
-.work-link {
-
-    font-size: var(--fs-d-works);
-}
-
-.work-desc {
-    width: 50%;
-    margin-top: 1vh;
-    font-size: var(--fs-d-works);
-}
-
-.work-stack {
-    font-size: small;
-    color: var(--hover);
-}
-
-
-@media screen and (max-width: 900px) {
-    .carousel img {
-        width: calc(100% / 2);
-    }
-}
-
-@media screen and (max-width: 550px) {
-    .carousel img {
-        width: 100%;
-    }
 }
 
 /* TOP LINK ARROW */
