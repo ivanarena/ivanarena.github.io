@@ -17,63 +17,71 @@
 
 <body>
     <main id="top">
+        <section id="main">
+            <h1 class="main-heading">Hi, I'm <span class="underlined">Ivan Arena</span>, a skilled and curious <span
+                    class="underlined">software engineer</span> currently based in Cork, Ireland.</h1>
+            <!-- <h1 class="main-heading"><span class="underlined">Ivan Arena</span>, a <span class="underlined">software
+                    engineer</span>.</h1> -->
+            <a href="res/resume.pdf">Scroll for more or click here for my resume.</a>
+        </section>
         <header>
-            <a href="/">Ivan Arena</a>
             <nav class="sections">
                 <ul>
-                    <li><a href="#work">Work</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a target="_blank" href="https://medium.com/@ivan.x28x">Blog</a></li>
                 </ul>
             </nav>
             <nav class="links">
-                <a href="https://github.com/ivanarena">
+                <a class="profile-link" target="_blank" href="https://github.com/ivanarena">
                     <img src="res/logos/github.svg" alt="github logo">
                 </a>
-                <a href="https://www.linkedin.com/in/ivan-arena/">
+                <a class="profile-link" target="_blank" href="https://www.linkedin.com/in/ivan-arena/">
                     <img src="res/logos/linkedin.png" alt="linkedin logo">
                 </a>
             </nav>
         </header>
-        <section id="main">
-            <h1 class="main-heading">Hi, I'm <span class="underlined">Ivan Arena</span>, a skilled and curious <span
-                    class="underlined">software engineer</span> currently based in Cork, Ireland.</h1>
-            <a href="res/Resume.pdf">Scroll for more or click here for my resume.</a>
-        </section>
         <section id="work">
             <section id="career">
-                <h1 class="section-heading">My career so far</h1>
-                <section class="jobs">
-                    <div class="job">
-                        <div class="timespan">
-                            <span class="start">May 2023</span>
-                            <div class="separator"></div>
-                            <span class="end">Aug 2023</span>
+                <h1 class="section-heading">My career so far.</h1>
+                <div class="content-wrap">
+
+                    <h2 class="section-heading-2">Work</h2>
+                    <section class="jobs">
+                        <div class="job">
+                            <div class="timespan">
+                                <span class="start">May 2023</span>
+                                <div class="separator"></div>
+                                <span class="end">Aug 2023</span>
+                            </div>
+                            <div class="job-metadata">
+                                <img src="res/logos/qualcomm.svg" alt="Qualcomm Technologies">
+                                <p class="job-description">In Summer 2023 I interned at Qualcomm Technologies in Cork,
+                                    Ireland. There I worked mainly in Machine Learning and Software Engineering, using
+                                    Flask
+                                    to build a Python web app to run inferences using the accelerator AIC-100.</p>
+                            </div>
                         </div>
-                        <div class="job-metadata">
-                            <img src="res/logos/qualcomm.svg" alt="Qualcomm Technologies">
-                            <p class="job-description">In Summer 2023 I interned at Qualcomm Technologies in Cork,
-                                Ireland. There I worked mainly in Machine Learning and Software Engineering, using Flask
-                                to build a Python web app to run inferences using the accelerator AIC-100.</p>
+                        <div class="job">
+                            <div class="timespan">
+                                <span class="start">Mar 2023</span>
+                                <div class="separator"></div>
+                                <span class="end">May 2023</span>
+                            </div>
+                            <div class="job-metadata">
+                                <img src="res/logos/athesys.png" alt="Athesys Srl">
+                                <p class="job-description">For my BSc thesis I interned at Athesys Srl and worked at
+                                    their
+                                    start-up Monokee, porting their web SSO to Linux systems using FreeIPA and Linux
+                                    PAM.
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="job">
-                        <div class="timespan">
-                            <span class="start">Mar 2023</span>
-                            <div class="separator"></div>
-                            <span class="end">May 2023</span>
-                        </div>
-                        <div class="job-metadata">
-                            <img src="res/logos/athesys.png" alt="Athesys Srl">
-                            <p class="job-description">For my BSc thesis I interned at Athesys Srl and worked at their
-                                start-up Monokee, porting their web SSO to Linux systems using FreeIPA and Linux PAM.
-                            </p>
-                        </div>
-                    </div>
-                </section>
+                </div>
             </section>
-            <section id="education">
-                <h1 class="section-heading">Educational background</h1>
+        </section>
+        <section id="education">
+            <div class="content-wrap">
+                <h2 class="section-heading-2">Education</h2>
                 <section class="jobs">
                     <div class="job">
                         <div class="timespan">
@@ -89,68 +97,73 @@
                         </div>
                     </div>
                 </section>
-            </section>
-            <section id="technologies">
-                <h1 class="section-heading">Languages and tools I use</h1>
-                <section class="tools-row-wrap">
-                    <div class="tools-row">
-                        <span class="tool">C/C++</span>
-                        <span class="tool">Python</span>
-                        <span class="tool">JavaScript</span>
-                        <span class="tool">React.js</span>
-                        <span class="tool">Node.js</span>
-                    </div>
-                    <div class="tools-row">
-                        <span class="tool">Docker</span>
-                        <span class="tool">Git</span>
-                        <span class="tool">NumPy</span>
-                        <span class="tool">PyTorch</span>
-                        <span class="tool">SQL</span>
-                        <span class="tool">Jupyter Notebook</span>
-                    </div>
-                    <div class="tools-row">
-                        <span class="tool">HTML</span>
-                        <span class="tool">CSS/Sass</span>
-                        <span class="tool">LaTeX</span>
-                        <span class="tool">VS Code</span>
-                        <span class="tool">Jira</span>
-                    </div>
-                </section>
-            </section>
-            <section id="projects">
-                <h1 class="section-heading">Recent projects</h1>
-                <section class="projects">
-                    <div class="project-card" id="uncaptchable">
-                        <h2 class="project-name">UnCAPTCHAble</h2>
-                        <div class="project-tools">
-                            <span class="tool">Node.js</span>
-                            <span class="tool">React.js</span>
+            </div>
+        </section>
+        <section id="technologies">
+            <div class="content-wrap">
+                <h2 class="section-heading-2">Skills</h2>
+                <section id="technologies-wrap">
+                    <section class="tools-row-wrap">
+                        <div class="tools-row">
+                            <span class="tool">C/C++</span>
                             <span class="tool">Python</span>
+                            <span class="tool">JavaScript</span>
+                            <span class="tool">React.js</span>
+                            <span class="tool">Node.js</span>
+                        </div>
+                        <div class="tools-row">
+                            <span class="tool">Docker</span>
+                            <span class="tool">Git</span>
+                            <span class="tool">NumPy</span>
                             <span class="tool">PyTorch</span>
-                            <span class="tool">MongoDB</span>
+                            <span class="tool">SQL</span>
                             <span class="tool">Jupyter Notebook</span>
                         </div>
-                        <p class="project-desc">UnCAPTCHAble is a brand new CAPTCHA that makes life really hard for AIs
-                            while still being easy to solve for humans.
-                        </p>
-                    </div>
-                </section>
-                <section class="projects">
-                    <div class="project-card" id="qtchartifier">
-                        <h2 class="project-name">QtChartifier</h2>
-                        <div class="project-tools">
-                            <span class="tool">C++</span>
-                            <span class="tool">Qt</span>
+                        <div class="tools-row">
+                            <span class="tool">HTML</span>
+                            <span class="tool">CSS/Sass</span>
+                            <span class="tool">LaTeX</span>
+                            <span class="tool">VS Code</span>
+                            <span class="tool">Jira</span>
                         </div>
-                        <p class="project-desc">Desktop application to create, manage and display tables of data through
-                            the use of various charts.</p>
-                    </div>
+                    </section>
                 </section>
+            </div>
+        </section>
+        <section id="projects">
+            <h1 class="section-heading">Recent projects.</h1>
+            <section class="projects">
+                <div class="project-card" id="uncaptchable">
+                    <h2 class="project-name">UnCAPTCHAble</h2>
+                    <div class="project-tools">
+                        <span class="tool">Node.js</span>
+                        <span class="tool">React.js</span>
+                        <span class="tool">Python</span>
+                        <span class="tool">PyTorch</span>
+                        <span class="tool">MongoDB</span>
+                        <span class="tool">Jupyter Notebook</span>
+                    </div>
+                    <p class="project-desc">UnCAPTCHAble is a brand new CAPTCHA that makes life really hard for AIs
+                        while still being easy to solve for humans.
+                    </p>
+                </div>
             </section>
+            <section class="projects">
+                <div class="project-card" id="qtchartifier">
+                    <h2 class="project-name">QtChartifier</h2>
+                    <div class="project-tools">
+                        <span class="tool">C++</span>
+                        <span class="tool">Qt</span>
+                    </div>
+                    <p class="project-desc">Desktop application to create, manage and display tables of data through
+                        the use of various charts.</p>
+                </div>
+            </section>
+        </section>
         </section>
 
         <section id="about">
-            <h1 class="section-heading">Something more about me</h1>
+            <h1 class="section-heading">Something more about me.</h1>
             <p>I was born in a small village in the wonderful Sicily, in Italy. I studied in Padua, near Venice,
                 worked in Cork, Ireland and I am now planning to do my master in Berlin.</p>
             <p>I wrote three books and I love playing sports and doing physical activity as much as reading poetry and
@@ -160,17 +173,16 @@
         </section>
 
         <section id="contact">
-            <h1 class="section-heading">Get in touch</h1>
             <p>For any queries you can reach out at <a href="mailto:ivan.x28x@gmail.com">ivan.x28x@gmail.com</a>. You
                 can also
                 check out my
                 GitHub and
                 LinkedIn below.</p>
             <nav class="links">
-                <a href="https://github.com/ivanarena">
+                <a class="profile-link" target="_blank" href="https://github.com/ivanarena/">
                     <img src="res/logos/github.svg" alt="github logo">
                 </a>
-                <a href="https://www.linkedin.com/in/ivan-arena/">
+                <a class="profile-link" target="_blank" href="https://www.linkedin.com/in/ivan-arena/">
                     <img src="res/logos/linkedin.png" alt="linkedin logo">
                 </a>
             </nav>
