@@ -267,9 +267,6 @@ span {
     padding-left: 40px;
 }
 
-.job-metadata img {
-    width: 140px;
-}
 
 p.job-description {
     color: var(--text-color-secondary);
