@@ -1,11 +1,11 @@
 :root {
     --accent: #ff5100;
     --hover: #ff5100;
-    --indent: 10vw;
-    --fs-d-p: 20px;
-    --fs-m-h1: 36px;
+    --indent: 30vw;
+    --fs-d-p: 16px;
+    --fs-m-h1: 24px;
     --fs-d-works: 24px;
-    --fs-d-section-h: 19vh;
+    --fs-d-section-h: 36px;
     --bradius: 15px;
     --bgcolor: rgb(172, 218, 224);
     --text-color: black;
@@ -64,16 +64,23 @@
     }
 }
 
+
 @font-face {
-    font-family: Inter;
-    src: url("./res/fonts/Inter-Bold.ttf");
+    font-family: LibreBaskerville;
+    src: url("./res/fonts/LibreBaskerville-Regular.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: LibreBaskerville;
+    src: url("./res/fonts/LibreBaskerville-Bold.ttf");
     font-weight: bold;
 }
 
 @font-face {
-    font-family: Inter;
-    src: url("./res/fonts/Inter-Medium.ttf");
-    font-weight: normal;
+    font-family: LibreBaskerville;
+    src: url("./res/fonts/LibreBaskerville-Italic.ttf");
+    font-style: italic;
 }
 
 
@@ -81,7 +88,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    font-family: 'LibreBaskerville', serif;
     scroll-behavior: smooth;
 }
 
@@ -105,7 +112,6 @@ header {
     width: 100%;
     padding-left: var(--indent);
     padding-right: var(--indent);
-    font-weight: bold;
 }
 
 header a {
@@ -174,9 +180,14 @@ section {
 
 h1.main-heading {
     width: 80vw;
-    max-width: 800px;
-    font-size: 4em;
-    line-height: 1.1em;
+    max-width: 1000px;
+    font-size: 2.5em;
+    line-height: 1.5em;
+    font-weight: lighter;
+}
+
+h1 span.bold {
+    font-weight: bold;
 }
 
 #main a {
@@ -202,11 +213,6 @@ h1.main-heading {
     line-height: .9em;
 }
 
-.section-heading-2 {
-    padding-left: var(--indent);
-    font-size: 6vh;
-    min-width: 30vw;
-}
 
 p {
     line-height: 1.5em;
@@ -221,21 +227,13 @@ p {
         font-size: var(--fs-m-h1);
     }
 
-    .content-wrap {
-        flex-direction: column;
-    }
-
-    .section-heading-2 {
+    .section-heading {
         margin-bottom: 4vh;
     }
 
 }
 
 /* CAREER */
-.content-wrap {
-    display: flex;
-    margin-bottom: 10vh;
-}
 
 .job {
     display: flex;
@@ -245,22 +243,19 @@ p {
     max-width: 60vw;
 }
 
-span {
-    font-weight: bold;
-}
-
 .timespan {
-    text-align: center;
+    text-align: right;
+    width: 100px;
 }
 
 .timespan .separator {
     background-color: black;
-    width: 2px;
-    height: 30px;
+    width: 1px;
+    height: 25px;
     margin-top: 15px;
     margin-bottom: 15px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 3px;
 }
 
 .job-metadata {
@@ -274,33 +269,6 @@ p.job-description {
     width: auto;
     margin-top: 1.2vh;
 }
-
-/* =============== */
-
-
-/* TECHNOLOGIES */
-section#technologies-wrap {
-    padding-left: var(--indent);
-    padding-right: var(--indent);
-}
-
-.tools-row-wrap {
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    /* justify-content: center; */
-}
-
-.tools-row {
-    /* padding: 1vh 0 1vh 0; */
-    display: flex;
-    align-items: center;
-    /* justify-content: center; */
-    flex-wrap: wrap;
-    height: auto;
-}
-
-
 
 /* =============== */
 
@@ -327,7 +295,7 @@ section#technologies-wrap {
 }
 
 .project-card:hover {
-    cursor: pointer;
+    cursor: poLibreBaskerville;
     transform: scale(102%, 102%);
     transition: transform .4s;
 }
