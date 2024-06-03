@@ -170,6 +170,7 @@ section {
     width: 100%;
     height: auto;
     flex-direction: column;
+    align-items: flex-start;
 }
 
 #main {
@@ -231,10 +232,9 @@ p {
 
 .job {
     display: flex;
-    margin-left: var(--indent);
-    margin-right: var(--indent);
+    text-align: justify;
     margin-bottom: 3vh;
-    max-width: 60vw;
+    max-width: 80vw;
 }
 
 .timespan {
@@ -257,26 +257,32 @@ p {
 }
 
 
+
 p.job-description {
     color: var(--text-color-secondary);
-    max-width: 800px;
-    width: 35vw;
+    max-width: 1000px;
     margin-top: 1.2vh;
 }
 
 .job-tools {
     margin-top: 1vh;
-    margin-bottom: 1vh;
+    margin-bottom: 2vh;
     font-weight: bold;
 }
 /* =============== */
 
 
 /* PROJECTS */
+.project {
+    padding-left: 0px;
+    width: 100vw;
+    max-width: 1000px;
+    margin-bottom: 2vh;
+}
+
 .projects {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
 }
 
@@ -294,9 +300,6 @@ p.job-description {
     font-weight: bold;
 }
 
-.project-desc {
-    margin-top: 18vh;
-}
 
 /* =============== */
 
@@ -308,14 +311,11 @@ section#about,
 section#contact {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
 }
 
 section#about p,
 section#contact p {
     text-align: justify;
-    margin-left: var(--indent);
-    margin-right: var(--indent);
     color: var(--text-color-secondary);
     width: 80vw;
     max-width: 1000px;
@@ -325,18 +325,6 @@ section#contact p {
     margin-top: 2vh;
 }
 
-section#contact nav.links {
-    margin-top: 8vh;
-}
-
-section#contact nav.links a {
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-section#contact nav.links a img {
-    width: 20px;
-}
 
 /* =============== */
 
