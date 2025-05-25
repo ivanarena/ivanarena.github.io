@@ -1,170 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Passionate and talented full-stack developer.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ivan Arena — Portfolio</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="shortcut icon" href="/res/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/res/favicon.ico" type="image/x-icon">
-    <noscript>Your browser does not support JavaScript!</noscript>
-</head>
-
-<body>
-    <main id="top">
-        <section id="main">
-            <h1 class="main-heading">Hi, I'm <i>Ivan Arena</i>, a young, skilled and curious <span class="bold">software engineer</span> and <span class="bold">published author</span> currently based in Copenhagen, Denmark.</h1>
-        </section>
-        <header>
-            <nav class="sections">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a target="_blank" href="https://medium.com/@ivan.x28x">Blog</a></li>
-                </ul>
-            </nav>
-            <nav class="links">
-                <a class="profile-link" target="_blank" href="https://github.com/ivanarena">
-                    <img src="res/logos/github.svg" alt="github logo">
-                </a>
-                <a class="profile-link" target="_blank" href="https://www.linkedin.com/in/ivan-arena/">
-                    <img src="res/logos/linkedin.png" alt="linkedin logo">
-                </a>
-            </nav>
-        </header>
-        <section id="career">
-            <section id="work">
-                <h2 class="section-heading">Experience</h2>
-                <section class="jobs">
-                    <div class="job">
-                        <div class="timespan">
-                            <span class="end">Present</span>
-                            <div class="separator"></div>
-                            <span class="start">Sep 2023</span>
-                        </div>
-                        <div class="job-metadata">
-                            <h3>Dreamplan — Student Software Engineer</h3>
-                            <p class="job-tools">#Python, #C#, #TypeScript, #React, #RESTAPI, #JupyterNotebook, #DataScience</p>
-                            <p class="job-description">When I moved to Copenhagen I started working at the inspiring fintech startup Dreamplan.
-                                Here, I built from scratch a Python API to provide Machine Learning models to some features of the React front-end, 
-                                which I also contributed to. I also worked on the calculation API in C#, writing tests and enriching its functionalities.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="job">
-                        <div class="timespan">
-                            <span class="end">Aug 2023</span>
-                            <div class="separator"></div>
-                            <span class="start">May 2023</span>
-                        </div>
-                        <div class="job-metadata">
-                            <h3>Qualcomm Technologies — Intern Software Engineer</h3>
-                            <p class="job-tools">#Python, #PyTorch, #TensorFlow, #JupyterNotebook, #RESTAPI</p>
-                            <p class="job-description">In Summer 2023 I interned at Qualcomm Technologies in Cork,
-                                Ireland. There, I worked mainly in Machine Learning and Software Engineering, using
-                                Flask to build a Python web app to run inferences using the accelerator AIC-100.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="job">
-                        <div class="timespan">
-                            <span class="end">May 2023</span>
-                            <div class="separator"></div>
-                            <span class="start">Mar 2023</span>
-                        </div>
-                        <div class="job-metadata">
-                            <h3>Athesys Srl — Intern Software Engineer</h3>
-                            <p class="job-tools">#Linux, #C</p>
-                            <p class="job-description">For my BSc thesis I interned at Athesys Srl and worked at
-                                their start-up Monokee, porting their web SSO to Linux systems using FreeIPA and Linux
-                                PAM.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="education">
-                <h2 class="section-heading">Education</h2>
-                <section class="jobs">
-                    <div class="job">
-                        <div class="timespan">
-                            <span class="end">Present</span>
-                            <div class="separator"></div>
-                            <span class="start">Aug 2023</span>
-                        </div>
-                        <div class="job-metadata">
-                            <h3>MSc Computer Science and Engineering — Technical University of Denmark</h3>
-                            <p class="job-description">
-                                Major: Artificial Intelligence and Algorithms.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="job">
-                        <div class="timespan">
-                            <span class="end">Jul 2023</span>
-                            <div class="separator"></div>
-                            <span class="start">Sep 2020</span>
-                        </div>
-                        <div class="job-metadata">
-                            <h3>BSc Computer Science — Università degli Studi di Padova</h3>
-                            <p class="job-description">GPA: 3.95/4.00. Thesis: <i>Integration of Single Sign-On in Linux Pluggable Authentication Module (Linux PAM).</i></p>
-                        </div>
-                    </div>
-                </section>
-            </section>
-        </section>
-        <section id="projects">
-            <h1 class="section-heading">Recent projects</h1>
-            <section class="projects">
-                <div class="job">
-                    <div class="job-metadata project">
-                        <h3><a target="_blank" href="https://github.com/ivanarena/uncaptchable">UnCAPTCHAble</a></h3>
-                        <p class="project-tools">#Node.js, #React, #Python, #PyTorch, #MongoDB, #JupyterNotebook</p>
-                        <p class="job-description">UnCAPTCHAble is an innovative CAPTCHA solution designed to outsmart AIs while remaining user-friendly
-                            for humans. Leveraging a cutting-edge tech stack, including Node.js for efficient server-side operations,
-                            React.js for a dynamic front-end and Python along with PyTorch and Jupyter Notebook for testing the solution against 
-                            state-of-the-art ML models for image recognition and object detection. This next-generation CAPTCHA technology strikes 
-                            the perfect balance between ease of use for legitimate users and sophisticated defenses against automated attacks.
-                        </p>
-                    </div>
-                </div>
-                <div class="job">
-                    <div class="job-metadata project">
-                        <h3><a target="_blank" href="https://github.com/ivanarena/unipd-progetto-pao">QtChartifier</a></h3>
-                        <p class="project-tools">#C++, #Qt</p>
-                        <p class="job-description">This desktop application enables users to create, manage, and display tables of data through various charts, 
-                            offering a comprehensive and intuitive data visualization experience. Developed using Qt alogn with C++, it ensures a high-performance, responsive interface
-                            with powerful data handling capabilities. Whether you're organizing data or presenting it visually, QtChartifier provides a seamless and 
-                            efficient solution for all your data management needs.</p>
-                    </div>
-                </div>
-            </section>
-        </section>
-
-        <section id="about">
-            <h1 class="section-heading">About</h1>
-            <p>I was born in a small village in the wonderful Mediterranean island of Sicily, in Italy. I studied at the University of Padua, near Venice,
-                worked in Cork, Ireland and I am now pursuing a master degree in Copenhagen while working full-time.
-                I wrote and published three books and I love playing sports and doing physical activity as much as reading poetry and
-                neuroscience essays. In my free time I develop personal projects to learn new technologies, write music and watch lots of arthouse
-                films.</p>
-        </section>
-
-        <section id="contact">
-            <p>For any queries you can reach out at <a href="mailto:ivan.x28x@gmail.com">ivan.x28x@gmail.com</a>. You
-                can also
-                check out my
-                <a class="profile-link" target="_blank" href="https://github.com/ivanarena/">GitHub</a> and
-                <a class="profile-link" target="_blank" href="https://www.linkedin.com/in/ivan-arena/">LinkedIn</a>.
-            </nav>
-        </section>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="icon" type="image/png" href="res/favicon.ico" />
+  </head>
+  <body>
+    <!-- <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#education">Education</a>
+                </li>
+                <li>
+                    <a href="#work">Work</li></a>
+                    
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+            </ul>
+        </nav>
+    </header> -->
+    <main>
+      <section id="intro">
+        <p>
+          Hi, I'm <span class="highlight">Ivan Arena</span>, software engineer
+          and published author.
+        </p>
+      </section>
+      <section id="education">
+        <p>
+          I started my journey in Padua, where a
+          <span class="highlight">BSc in Computer Science</span> laid my
+          foundation in algorithms, C++ and data structures. With a 3.95 GPA, I
+          wasn’t just learning — I was thriving. Now, I’m in Copenhagen pursuing
+          an
+          <span class="highlight"
+            >MSc in Computer Science and Engineering at DTU</span
+          >, focusing on AI and algorithms. It’s where theory meets real-world
+          application, and I get to build what I once only imagined.
+        </p>
+      </section>
+      <section id="work">
+        <p>
+          At <span class="highlight">Dreamplan</span>, I’m not a cog in a
+          machine — I build the machine. I deploy ML models to production, build
+          RAG chatbots and turn clustering algorithms into Next.js insights. I
+          even improved a financial API in C#, blending backend logic with
+          real-world impact.
+        </p>
+        <p>
+          At <span class="highlight">Qualcomm</span>, I built tools to run and
+          test transformer models on custom AI chips. I contributed to
+          Huggingface’s diffusers and optimized 9 ML models for Qualcomm’s
+          accelerator.
+        </p>
+        <p>
+          At <span class="highlight">Athesys</span>, I configured SAML and
+          OpenID Connect authentication on Linux systems, diving into
+          infrastructure and learning how real-world security is built from the
+          ground up.
+        </p>
+      </section>
+      <section id="projects">
+        <p>
+          A custom CAPTCHA API that beats AI — literally. Built with Node.js,
+          React, MongoDB, and PyTorch, it fooled even advanced classifiers and
+          detectors.
+        </p>
+        <p>
+          QtChartifier - Think Excel, but ours. A C++ and Qt desktop app for
+          editing tabular data and generating live charts.
+        </p>
+        <p>
+          Multi-Agent Simulator - A project in Python and Java simulating agents
+          in search environments. I led the optimization effort, improving speed
+          by 35%.
+        </p>
+      </section>
     </main>
-    <a id="top-link" class="not-displayed" href="#top">&uarr;</a>
     <footer>
-        <span>Made by me — 2024</span>
+      &copy; 2025 — Environmentally friendly portfolio created by me.
     </footer>
-</body>
+  </body>
 </html>

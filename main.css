@@ -1,364 +1,54 @@
-:root {
-    --accent: #ed2e41;
-    --hover: #ed2e41;
-    --indent: auto;
-    /* --indent: 30vw; */
-    --fs-d-p: 16px;
-    --fs-m-h1: 20px;
-    --fs-d-works: 24px;
-    --fs-d-section-h: 36px;
-    --bradius: 15px;
-    --bgcolor: rgb(172, 218, 224);
-    --text-color: black;
-    --text-color-secondary: rgb(58, 58, 58);
-}
-
-@-webkit-keyframes fadein {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fadein {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-
-@keyframes appearFromBottom {
-    0% {
-        opacity: 0;
-        transform: translateY(500px) rotate(-360deg);
-    }
-
-    30% {
-        opacity: 1;
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
-
-@keyframes disappearFromBottom {
-    0% {
-        transform: translateY(0);
-    }
-
-    30% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-        display: none;
-        transform: translateY(500px) rotate(-360deg);
-    }
-}
-
-
-@font-face {
-    font-family: LibreBaskerville;
-    src: url("./res/fonts/LibreBaskerville-Regular.ttf");
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: LibreBaskerville;
-    src: url("./res/fonts/LibreBaskerville-Bold.ttf");
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: LibreBaskerville;
-    src: url("./res/fonts/LibreBaskerville-Italic.ttf");
-    font-style: italic;
-}
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'LibreBaskerville', serif;
-    scroll-behavior: smooth;
-}
-
 body {
-    -webkit-animation: fadein 2s;
-    animation: fadein 2s;
-    letter-spacing: -0.6px;
     display: flex;
     flex-direction: column;
+    background-color: rgb(30, 38, 84);
+    font-family: Helvetica, sans-serif;
+    color: white;
+    padding: 0 10% 0 10%;
+    line-height: 2em;
     align-items: center;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: center;    
 }
 
 main {
     display: flex;
+    width: 80vw;
+    max-width: 700px;
     flex-direction: column;
     align-items: center;
-}
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 7vh;
-    width: 100%;
-}
-
-header a {
-    text-decoration: none;
-    transition: color .2s ease-in-out;
-}
-
-a:hover {
-    color: var(--hover);
-    transition: color .2s ease-in-out;
-}
-
-nav ul {
-    display: flex;
-    list-style-type: none;
-    margin-left: 0;
-}
-
-nav a {
-    margin-left: 0;
-    margin-right: 4vw;
-}
-
-nav img {
-    width: 20px;
-}
-
-nav.links {
-    display: flex;
-    justify-content: flex-end;
-}
-
-nav a.profile-link {
-    margin-left: 4vw;
-    margin-right: 0;
-}
-
-/* FLEX */
-section,
-footer {
-    display: flex;
-}
-
-footer {
     justify-content: center;
-    margin-top: 16vh;
 }
 
-/* SECTIONS */
 section {
     width: 100%;
-    height: auto;
-    flex-direction: column;
-    align-items: flex-start;
+    text-align: justify;
+    margin-top: 3em;
 }
 
-#main {
-    margin-top: 30vh;
+ul {
+    list-style: none;
     display: flex;
-    justify-content: center;
+    padding: 0;
 }
 
-h1.main-heading {
-    width: 80vw;
-    max-width: 1000px;
-    font-size: 2.0em;
-    line-height: 1.7em;
-    font-weight: 100;
+ul li {
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 2em;
 }
 
-h1 span.bold {
+ul li a {
     font-weight: bold;
-}
-
-#main a {
-    margin-top: 12vh;
-    margin-bottom: 16vh;
-    color: var(--text-color-secondary);
     text-decoration: none;
+    color: white;
 }
 
-#main a:hover {
-    color: var(--hover);
-}
-
-
-.section-heading {
-    margin-top: 16vh;
-    margin-bottom: 10vh;
-    font-size: var(--fs-d-section-h);
-}
-
-
-p {
-    line-height: 1.8em;
-    font-size: var(--fs-d-p);
-}
-
-@media screen and (max-width: 586px) {
-
-    h1.main-heading {
-        width: 75vw;
-        font-size: var(--fs-m-h1);
-    }
-
-    .section-heading {
-        margin-bottom: 4vh;
-    }
-
-}
-
-/* CAREER */
-
-.job {
-    display: flex;
-    text-align: justify;
-    margin-bottom: 3vh;
-    max-width: 80vw;
-}
-
-.timespan {
-    text-align: right;
-    width: 100px;
-}
-
-.timespan .separator {
-    background-color: black;
-    width: 1px;
-    height: 25px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-left: auto;
-    margin-right: 3px;
-}
-
-.job-metadata {
-    padding-left: 40px;
-}
-
-
-
-p.job-description {
-    color: var(--text-color-secondary);
-    max-width: 1000px;
-    margin-top: 1.2vh;
-}
-
-.job-tools {
-    margin-top: 1vh;
-    margin-bottom: 2vh;
-    font-weight: bold;
-}
-/* =============== */
-
-
-/* PROJECTS */
-.project {
-    padding-left: 0px;
-    width: 100vw;
-    max-width: 1000px;
-    margin-bottom: 2vh;
-}
-
-.projects {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.project-card {
-    margin-bottom: 6vh;
-}
-
-.project-name {
-    margin-bottom: 2vh;
-}
-
-.project-tools {
-    margin-top: 1vh;
-    margin-bottom: 3vh;
-    font-weight: bold;
-}
-
-
-/* =============== */
-
-
-
-
-/* ABOUT, CONTACT */
-section#about,
-section#contact {
-    display: flex;
-    flex-direction: column;
-}
-
-section#about p,
-section#contact p {
-    text-align: justify;
-    color: var(--text-color-secondary);
-    width: 80vw;
-    max-width: 1000px;
-}
-
-section#contact p {
-    margin-top: 2vh;
-}
-
-
-/* =============== */
-
-a:hover {
-    color: var(--hover);
-    transition: color .2s ease-in-out;
-}
-
-
-a {
-    transition: color .2s ease-in-out;
-    text-decoration: underline;
-    color: var(--text-color);
+.highlight {
+    color: rgb(229, 105, 162);
 }
 
 footer {
-    margin-bottom: 6vh;
-}
-
-
-/* UTILITIES */
-.italic {
-    font-style: italic;
-}
-
-.underlined {
-    text-decoration: underline;
-}
-
-.accent {
-    color: var(--accent);
-}
-
-.not-displayed,
-a#top-link.not-displayed {
-    display: none;
+    margin-top: 2em;
+    text-align: center;
+    padding: 2em;
 }
