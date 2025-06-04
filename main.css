@@ -1,13 +1,18 @@
+:root {
+    --primary-color: rgb(255, 60, 0);
+}
+
 body {
     display: flex;
     flex-direction: column;
-    background-color: rgb(30, 38, 84);
-    font-family: Helvetica, sans-serif;
-    color: white;
+    background-color: rgb(255, 255, 255);
+    font-family: monospace;
+    color: var(--primary-color);
     padding: 0 10% 0 10%;
     line-height: 2em;
     align-items: center;
     justify-content: center;    
+    min-height: 90vh;
 }
 
 main {
@@ -22,31 +27,15 @@ main {
 section {
     width: 100%;
     text-align: justify;
-    margin-top: 3em;
 }
 
-ul {
-    list-style: none;
-    display: flex;
-    padding: 0;
+p {
+    margin-bottom: 1.5em;
 }
 
-ul li {
-    margin-left: 2em;
-    margin-right: 2em;
-    margin-top: 2em;
+a:active, a:visited, a:link {
+    color: var(--primary-color);
 }
-
-ul li a {
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-}
-
-.highlight {
-    color: rgb(229, 105, 162);
-}
-
 footer {
     margin-top: 2em;
     text-align: center;
