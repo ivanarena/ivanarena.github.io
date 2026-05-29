@@ -1,43 +1,46 @@
 :root {
-    --primary-color: rgb(255, 60, 0);
+  --primary-color: rgb(37, 13, 123);
+  --background-color: rgb(255, 255, 255);
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(255, 255, 255);
-    font-family: monospace;
-    color: var(--primary-color);
-    padding: 0 10% 0 10%;
-    line-height: 2em;
-    align-items: center;
-    justify-content: center;    
-    min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+  font-family: monospace;
+  color: var(--primary-color);
+  padding: 0 10% 0 10%;
+  line-height: 2em;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
 }
 
 main {
-    display: flex;
-    width: 80vw;
-    max-width: 700px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  width: 80vw;
+  max-width: 700px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 section {
-    width: 100%;
-    text-align: justify;
+  width: 100%;
+  text-align: justify;
 }
 
 p {
-    margin-bottom: 1.5em;
+  margin-bottom: 1.5em;
 }
 
-a:active, a:visited, a:link {
-    color: var(--primary-color);
+a:active,
+a:visited,
+a:link {
+  color: var(--primary-color);
 }
 footer {
-    margin-top: 2em;
-    text-align: center;
-    padding: 2em;
+  margin-top: 2em;
+  text-align: center;
+  padding: 2em;
 }
